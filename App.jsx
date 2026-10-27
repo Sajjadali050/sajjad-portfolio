@@ -18,12 +18,10 @@ export default function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Updated Profile Photo URL
   const profilePhotoUrl = "https://imgur.com/zYbPdnl.jpg";
   const cvLink = "https://drive.google.com/file/d/1HsF6R3ee-G9Q5uEgCrS4Ueqk6WsyFEhr/view?usp=drivesdk";
   const whatsappLink = "https://wa.me/966542475245";
 
-  // Palette from your requested Sage Green screenshot
   const colors = {
     bgPrimary: "#18211B",
     bgSecondary: "#253328",
@@ -167,7 +165,6 @@ export default function App() {
   return (
     <div style={{ backgroundColor: colors.bgPrimary, color: colors.creamWhite }} className={`min-h-screen font-sans relative ${lang === 'ar' ? 'rtl' : 'ltr'}`}>
       
-      {/* WhatsApp Floating Button */}
       <a 
         href={whatsappLink} 
         target="_blank" 
@@ -182,7 +179,6 @@ export default function App() {
         </span>
       </a>
 
-      {/* Navbar */}
       <nav style={{ backgroundColor: scrolled ? `${colors.bgPrimary}F0` : 'transparent', borderColor: `${colors.sageGreen}30` }} className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${scrolled ? 'backdrop-blur-md border-b py-3 shadow-lg' : 'py-5'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <a href="#home" className="flex items-center space-x-2 group">
@@ -249,7 +245,6 @@ export default function App() {
         )}
       </nav>
 
-      {/* Hero Section */}
       <section id="home" className="min-h-screen pt-32 pb-20 flex items-center relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -312,7 +307,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" style={{ backgroundColor: `${colors.bgSecondary}60`, borderColor: `${colors.sageGreen}20` }} className="py-24 border-t">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -357,7 +351,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Skills Section */}
       <section id="skills" className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -383,7 +376,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Certificates Section */}
       <section id="certificates" style={{ backgroundColor: `${colors.bgSecondary}60`, borderColor: `${colors.sageGreen}20` }} className="py-24 border-t">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -408,7 +400,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Projects Section */}
       <section id="projects" className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -447,7 +438,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Experience Section */}
       <section id="experience" style={{ backgroundColor: `${colors.bgSecondary}60`, borderColor: `${colors.sageGreen}20` }} className="py-24 border-t">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -477,7 +467,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Education Section */}
       <section id="education" className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -505,7 +494,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" style={{ backgroundColor: `${colors.bgSecondary}60`, borderColor: `${colors.sageGreen}20` }} className="py-24 border-t">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -563,7 +551,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer style={{ backgroundColor: colors.bgPrimary, borderColor: `${colors.sageGreen}20`, color: colors.mutedText }} className="py-8 border-t text-center text-sm">
         <p>© {new Date().getFullYear()} Sajjad Ali Ansari. All rights reserved.</p>
       </footer>
