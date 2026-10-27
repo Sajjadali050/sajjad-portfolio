@@ -22,7 +22,6 @@ export default function App() {
   const cvLink = "https://drive.google.com/file/d/1HsF6R3ee-G9Q5uEgCrS4Ueqk6WsyFEhr/view?usp=drivesdk";
   const whatsappLink = "https://wa.me/966542475245";
 
-  // Exact Palette from your requested Sage Green screenshot
   const colors = {
     bgPrimary: "#18211B",
     bgSecondary: "#253328",
@@ -166,7 +165,6 @@ export default function App() {
   return (
     <div style={{ backgroundColor: colors.bgPrimary, color: colors.creamWhite }} className={`min-h-screen font-sans relative ${lang === 'ar' ? 'rtl' : 'ltr'}`}>
       
-      {/* WhatsApp Floating Button */}
       <a 
         href={whatsappLink} 
         target="_blank" 
@@ -181,7 +179,6 @@ export default function App() {
         </span>
       </a>
 
-      {/* Navbar */}
       <nav style={{ backgroundColor: scrolled ? `${colors.bgPrimary}F0` : 'transparent', borderColor: `${colors.sageGreen}30` }} className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${scrolled ? 'backdrop-blur-md border-b py-3 shadow-lg' : 'py-5'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <a href="#home" className="flex items-center space-x-2 group">
@@ -270,7 +267,6 @@ export default function App() {
                 {t.heroDesc}
               </p>
 
-              {/* Exact Matching Button Styling from Screenshot */}
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
                 <a href="#projects" style={{ backgroundColor: colors.sageGreen, color: colors.bgPrimary }} className="px-6 py-3 rounded-xl font-bold text-sm shadow-md transition-all flex items-center space-x-2">
                   <span>{t.exploreBtn}</span>
@@ -281,7 +277,6 @@ export default function App() {
                 </a>
               </div>
 
-              {/* Stats Bar matching your screenshot */}
               <div className="pt-8 grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0">
                 <div style={{ backgroundColor: colors.bgSecondary, borderColor: `${colors.sageGreen}25` }} className="p-4 rounded-xl border">
                   <p style={{ color: colors.sageGreen }} className="text-2xl font-bold">03+</p>
