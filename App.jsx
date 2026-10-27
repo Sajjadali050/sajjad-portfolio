@@ -18,7 +18,7 @@ export default function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const profilePhotoUrl = "https://imgur.com/zYbPdnl.jpg";
+  const profilePhotoUrl = "https:/imgur.com/a/I999Sp2.jpg";
   const cvLink = "https://drive.google.com/file/d/1HsF6R3ee-G9Q5uEgCrS4Ueqk6WsyFEhr/view?usp=drivesdk";
   const whatsappLink = "https://wa.me/966542475245";
 
