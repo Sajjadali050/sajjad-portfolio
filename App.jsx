@@ -18,11 +18,12 @@ export default function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const profilePhotoUrl = https://imgur.com/zYbPdnljpg";
+  // Updated Profile Photo URL
+  const profilePhotoUrl = "https://imgur.com/zYbPdnl.jpg";
   const cvLink = "https://drive.google.com/file/d/1HsF6R3ee-G9Q5uEgCrS4Ueqk6WsyFEhr/view?usp=drivesdk";
   const whatsappLink = "https://wa.me/966542475245";
 
-  // Palette from your screenshot
+  // Palette from your requested Sage Green screenshot
   const colors = {
     bgPrimary: "#18211B",
     bgSecondary: "#253328",
@@ -270,7 +271,6 @@ export default function App() {
                 {t.heroDesc}
               </p>
 
-              {/* Exact Matching Button Styling from Screenshot */}
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
                 <a href="#projects" style={{ backgroundColor: colors.sageGreen, color: colors.bgPrimary }} className="px-6 py-3 rounded-xl font-bold text-sm shadow-md transition-all flex items-center space-x-2">
                   <span>{t.exploreBtn}</span>
@@ -281,7 +281,6 @@ export default function App() {
                 </a>
               </div>
 
-              {/* Stats Bar matching your screenshot */}
               <div className="pt-8 grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0">
                 <div style={{ backgroundColor: colors.bgSecondary, borderColor: `${colors.sageGreen}25` }} className="p-4 rounded-xl border">
                   <p style={{ color: colors.sageGreen }} className="text-2xl font-bold">03+</p>
